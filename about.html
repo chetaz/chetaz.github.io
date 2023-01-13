@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="slideshowContainer">
+    <a href="#" target="_blank">
+       <img class='imageSlides' src="assets3/ava1.jpg" style="width:90%;height:  auto;margin-bottom: 20px !important;padding: 10px; margin: 10px;">
+    </a>
+    <a href="#" target="_blank">
+       <img class='imageSlides' src="assets3/ava2.jpg" style="width:90%;height:  auto;margin-bottom: 20px !important;padding: 10px; margin: 10px;">
+    </a>
+    <a href="#" target="_blank">
+       <img class='imageSlides' src="assets3/ava3.jpg" style="width:90%; height:  auto;margin-bottom: 0px !important; padding: 10px; margin: 10px;">
+    </a>
+  
+    <div class="slideshowCircles" style="text-align:center">
+      <span class="circle dot"></span>
+      <span class="circle dot"></span>
+      <span class="circle dot"></span>
+    </div>
+  </div>
+<script>     
+var imageSlides = document.getElementsByClassName('imageSlides');
+var circles = document.getElementsByClassName('circle');
+var counter = 0
+
+function hideImages() {
+    for (var i = 0; i < imageSlides.length; i++) {
+        imageSlides[i].classList.remove('visible');
+    }
+}  
+
+function removeDots() {
+    for (var i = 0; i < imageSlides.length; i++) {
+        circles[i].classList.remove('dot');
+    }
+}
+
+function imageLoop() {
+    var currentImage = imageSlides[counter];
+    var currentDot = circles[counter];
+    currentImage.classList.add('visible');
+    removeDots();
+    currentDot.classList.add('dot');
+    counter++;
+}
+
+function slideshow() {
+    if (counter < imageSlides.length) {
+        imageLoop();
+    } else {
+        counter = 0;
+        hideImages();
+        imageLoop();
+    }
+}
+
+setTimeout(slideshow, 1000);
+var imageSlideshowInterval = setInterval(slideshow, 1111);
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,82 @@
+.body{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: rgb(184, 224, 224);
+}
+
+.in{
+    width: 30%;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    height: 30%;
+    border-color: skyblue;
+}
+.icc{
+    width: 20%;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    height: 20%;
+    border-color: skyblue;
+    background-color: rgb(194, 185, 185);
+    color: white;
+}
+
+
+.btn{
+    
+    padding: 20px;
+    margin: 9px;
+    width: 8%;
+    border-radius: 10px;
+    border: 5px;
+    color: skyblue;
+    border-color: #111;
+    background-color: rgb(163, 99, 99);
+}
+.btn1{
+    
+    padding: 20px;
+    margin: 9px;
+    width: 10%;
+    border-radius: 10px;
+    border: 5px;
+    color: skyblue;
+    border-color: #111;
+    background-color: rgb(91, 11, 240);
+}
+.btn2{
+    
+    padding: 20px;
+    margin: 9px;
+    width: 8%;
+    border-radius: 10px;
+    border: 5px;
+    color: skyblue;
+    border-color: #111;
+    background-color: rgb(105, 129, 110);
+}
+.btn3{
+    
+    padding: 20px;
+    margin: 9px;
+    width: 8%;
+    border-radius: 10px;
+    border: 5px;
+    color: skyblue;
+    border-color: #111;
+    background-color: rgb(9, 119, 101);
+}
+
+.set{
+    text-align: center;
+    box-shadow: 10px;
+    background-color: rgb(63, 59, 59);
+    padding: 50px;
+    margin: 50px;
+    
+    
+
+
+}
